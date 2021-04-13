@@ -20,8 +20,8 @@ public class DepartmentRepository {
 
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://54.90.58.194:3306/my_company", "remote", "1234");
-            // Connection conn = DriverManager.getConnection("jdbc:mysql://den1.mysql6.gear.host:3306/mycompany3", "mycompany3", "Oy6ab79p??8i");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://54.90.58.194:3306/my_company", "****", "****");
+            // Connection conn = DriverManager.getConnection("jdbc:mysql://den1.mysql6.gear.host:3306/mycompany3", "mycompany3", "****");
             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM departments");
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
